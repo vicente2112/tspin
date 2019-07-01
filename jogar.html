@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./imgs/favicon.ico" />
+	<title>Jogar!</title>
+</head>
+
+<body>
+	<header>
+		<h1> T </h1>
+		<ul>
+			<li><a href="jogar.html">Jogar!</a></li>
+			<li><a href="index.html">História</a></li>
+			<li><a href="versoes.html">Versões</a></li>
+		</ul>
+		<!-- abrir o  Modal -->
+		<p id="myBtn">Sobre</p>
+
+		<!--Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- conteudo do Modal -->
+		  <div class="modal-content">
+		  	<div class="modal-header">
+			    <span class="close">&times;</span>
+			    <h2>Sobre o Site</h2>
+			  </div>
+			  <div class="modal-body">
+			    <p>Esse site foi "feito" pelo Vicente Soares Hastenreintenentenreiteren, aluno do CEFET-MG, para a aula de Programação Web dada pelo sensacional professor Flávio Coutinho. A única razão desse site existir (além dos pontos), é a obsessão que o Vicente tem por Tetris. Obsessão compreensível, visto que Tetris é o melhor jogo de todos os tempos.</p>
+			    <p>Fontes: <a href="https://pt.wikipedia.org/wiki/Tetris"> Wikipedia </a>, <a href='https://github.com/dionyziz/canvas-tetris'> Canvas Tetris</a></p>
+			  </div>
+			  
+			  </div>
+	</header>
+	<audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+        <canvas width='300' height='600'></canvas>
+        <button id="playbutton" onclick="playButtonClicked();">Play</button>
+        <script src='js/tetris.js'></script>
+        <script src='js/controller.js'></script>
+        <script src='js/render.js'></script>
+</body>
+</html>

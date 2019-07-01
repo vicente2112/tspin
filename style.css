@@ -1,0 +1,263 @@
+html{
+	background-image: url("./imgs/bg.jpg");
+}
+li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 40px;
+
+
+}
+
+header{
+	font-family: 'Anton', sans-serif;
+	background-color: rgb(56, 255, 142);
+
+	border: 3px solid rgb(227, 155, 242);
+	}
+ul{
+	text-align: center;
+	padding: 0px;
+
+}
+
+li a:link{
+	font-family: 'B612 Mono', monospace;	 
+	
+	background-color: rgb(201, 255, 224);
+	color: black;
+	padding: 14px 25px;
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+li a:hover {
+  background-color: rgb(229, 255, 240);
+}
+
+li a:active{
+	background-color: rgb(156, 206, 177); 
+}
+
+
+
+
+
+main{
+	font-size: 140%;
+	font-family: "Arial Black", sans-serif;
+	width: 1000px;
+	
+
+}
+
+body{
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: rgb(216, 255, 246, 0.9);
+	border-radius: 10px;
+
+
+}
+
+p{
+	padding: 50px;
+	text-align: justify;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+#galeria{
+	position: relative;
+	padding-bottom: 75px;
+}
+#botoes{
+	
+	width: 1000px;
+
+
+	position: absolute;
+	top: 330px;
+}
+#alexey{
+	width: 25%;
+	height: 25%;	
+	float: right;
+	padding: 50px;
+
+}
+
+#slide {
+ display: block;
+  width: 400px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+  position: relative;
+}
+
+
+
+.controle {
+  background-color: rgb(216, 255, 246);
+  color: black;
+  border: 2px solid rgb(56, 255, 142);
+  width: 40px;
+  height: 120px;
+  padding: 6px 10px;
+
+
+  
+}
+.controle:hover {
+  
+
+  font-size: 110%;
+  cursor: pointer;
+}
+
+#proximo{
+	float: right;
+	margin-right: 220px;
+}
+#anterior{
+	float: left;
+	margin-left: 220px;	
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#playbutton {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('./imgs/TETRIS.TTF');
+}
+
+header {
+  font-family: myFirstFont;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content{
+	font-family: Arial;
+}
+
+
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(56, 255, 142) ;
+  color: black;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgb(216, 255, 246);
+  font-family: 'Arial';
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+#myBtn{
+	    font-family: 'B612 Mono', monospace;
+    background-color: rgb(201, 255, 224);
+    color: black;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#myBtn:hover{
+  background-color: rgb(229, 255, 240);
+  cursor: pointer;
+}
+
+
+#myBtn:active{
+	background-color: rgb(156, 206, 177); 
+}
